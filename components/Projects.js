@@ -30,7 +30,10 @@ export default function Projects() {
 
 const ProjectCard = ({ title, link, imgUrl, number }) => {
   return (
-    <a href={link} className="w-full block shadow-2xl">
+    <a
+      href={link}
+      className="lg:w-full md:w-auto sm:w-auto block shadow-2xl max-w-xl mx-auto"
+    >
       <div className="relative overflow-hidden">
         <div className="h-72 object-cover">
           <img

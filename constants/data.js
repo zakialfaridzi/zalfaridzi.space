@@ -101,7 +101,7 @@ const userData = {
   ],
   resumeUrl: "https://s.id/EDOKB",
   socialLinks: {
-    instagram: "https://instagram.com/zaki.faridzi",
+    instagram: "https://instagram.com/zalfaridzii",
     twitter: "https://twitter.com/zalfaridzii",
     linkedin: "https://linkedin.com/in/zakialfaridzi",
     github: "https://github.com/zakialfaridzi",
