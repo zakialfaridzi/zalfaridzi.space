@@ -71,10 +71,12 @@ export default function AboutMe() {
                 <a
                   href={userData.socialLinks.twitter}
                   className="flex flex-row items-center space-x-4 group"
+                  target="_blank"
+                  rel="noreferrer"
                 >
                   <div className="my-4">&rarr;</div>
                   <p className="text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300">
-                    <div className="absolute h-0.5 w-full bg-[#FAF089] bottom-0 transform -translate-x-24 group-hover:translate-x-0 transition duration-300"></div>
+                    <div className="absolute h-0.5 w-full bg-black dark:bg-[#FAF089] bottom-0 transform -translate-x-24 group-hover:translate-x-0 transition duration-300"></div>
                     Twitter
                   </p>
                 </a>
@@ -83,10 +85,12 @@ export default function AboutMe() {
                 <a
                   href={userData.socialLinks.github}
                   className="flex flex-row items-center space-x-4 group"
+                  target="_blank"
+                  rel="noreferrer"
                 >
                   <div className="my-4">&rarr;</div>
                   <p className="text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300">
-                    <div className="absolute h-0.5 w-full bg-[#FAF089] bottom-0 transform -translate-x-24 group-hover:translate-x-0 transition duration-300"></div>
+                    <div className="absolute h-0.5 w-full bg-black dark:bg-[#FAF089] bottom-0 transform -translate-x-24 group-hover:translate-x-0 transition duration-300"></div>
                     GitHub
                   </p>
                 </a>
@@ -95,10 +99,12 @@ export default function AboutMe() {
                 <a
                   href={userData.socialLinks.linkedin}
                   className="flex flex-row items-center space-x-4 group"
+                  target="_blank"
+                  rel="noreferrer"
                 >
                   <div className="my-4">&rarr;</div>
                   <p className="text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300">
-                    <div className="absolute h-0.5 w-full bg-[#FAF089] bottom-0 transform -translate-x-24 group-hover:translate-x-0 transition duration-300"></div>
+                    <div className="absolute h-0.5 w-full bg-black dark:bg-[#FAF089] bottom-0 transform -translate-x-24 group-hover:translate-x-0 transition duration-300"></div>
                     LinkedIn
                   </p>
                 </a>
@@ -107,10 +113,12 @@ export default function AboutMe() {
                 <a
                   href={userData.socialLinks.twitter}
                   className="flex flex-row items-center space-x-4 group"
+                  target="_blank"
+                  rel="noreferrer"
                 >
                   <div className="my-4">&rarr;</div>
                   <p className="text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300">
-                    <div className="absolute h-0.5 w-full bg-[#FAF089] bottom-0 transform -translate-x-28 group-hover:translate-x-0 transition duration-300"></div>
+                    <div className="absolute h-0.5 w-full bg-black dark:bg-[#FAF089] bottom-0 transform -translate-x-28 group-hover:translate-x-0 transition duration-300"></div>
                     Instagram
                   </p>
                 </a>

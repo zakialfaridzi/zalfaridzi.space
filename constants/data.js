@@ -9,7 +9,7 @@ const userData = {
   projects: [
     {
       title: "rMidi",
-      link: "https://github.com/zakialfaridzi/rmidii",
+      link: "https://r-midi.vercel.app/",
       imgUrl: "/rmidi.png",
     },
     {
