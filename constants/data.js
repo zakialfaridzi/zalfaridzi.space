@@ -11,15 +11,17 @@ const userData = {
       title: "rMidi",
       link: "https://r-midi.vercel.app/",
       imgUrl: "/rmidi.png",
+      desc: "Midi Keyboard Emulation Built with React and TS",
     },
     {
       title: "Komen.in (WIP)",
-      link: "#",
-      imgUrl: "/WIP.png",
+      link: "https://github.com/zakialfaridzi/komenin",
+      imgUrl: "/komenin.png",
+      desc: "Commenting Platform yang mudah digunakan untuk web anda!",
     },
     {
       title: "Homey (WIP)",
-      link: "#",
+      link: "",
       imgUrl: "/WIP.png",
     },
     {
