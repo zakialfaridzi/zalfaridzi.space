@@ -3,6 +3,8 @@ import Link from "next/link";
 import { useTheme } from "next-themes";
 import { useRouter } from "next/router";
 import userData from "@constants/data";
+import { SiSpotify } from "react-icons/si";
+import { FiSun, FiMoon } from "react-icons/fi";
 
 export default function Navbar() {
   const router = useRouter();
@@ -109,9 +111,46 @@ export default function Navbar() {
               )}
             </a>
           </Link>
+          <Link href="/spotifyplaying">
+            <a
+              className={`text-base  ${
+                router.asPath === "/spotifyplaying"
+                  ? "text-gray-800 font-bold dark:text-[#FAF089]"
+                  : "text-gray-600 dark:text-gray-300 font-normal hover:text-black dark:hover:text-[#FAF089]"
+              }`}
+            >
+              Jam{" "}
+              {router.asPath === "/spotifyplaying" && (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  className="bi bi-arrow-down inline-block h-3 w-3 animate-bounce dark:text-gray-300"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"
+                  />
+                </svg>
+              )}
+            </a>
+          </Link>
         </div>
 
         <div className="space-x-4 flex flex-row items-center">
+          <Link href="/spotifyplaying">
+            <a
+              className={`text-base  ${
+                router.asPath === "/spotifyplaying"
+                  ? "text-gray-800 font-bold dark:text-[#FAF089]"
+                  : "text-gray-600 dark:text-gray-300 font-normal hover:text-black dark:hover:text-[#FAF089]"
+              }`}
+            >
+              <SiSpotify size={20} color={"#1ED760"} />
+            </a>
+          </Link>
           <a
             href={userData.socialLinks.instagram}
             className="text-base font-normal text-gray-600 dark:text-gray-300"

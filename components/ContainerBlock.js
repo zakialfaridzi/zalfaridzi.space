@@ -73,7 +73,7 @@ export default function ContainerBlock({ children, ...customMeta }) {
         animate="enter"
         exit="exit"
         variants={variants}
-        transition={{ type: "spring" }}
+        transition={{ type: "tween" }}
       >
         {children}
       </motion.main>

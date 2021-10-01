@@ -3,9 +3,15 @@ import Image from "next/image";
 import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
 import { RainbowHighlight } from "./RainbowHighlight";
 import styles from "../styles/Hero.module.css";
+import useSWR from "swr";
 
 export default function Hero() {
   const colors = ["#F59E0B", "#84CC16", "#10B981", "#3B82F6"];
+
+  const fetcher = (url) => fetch(url).then((r) => r.json());
+  const { data } = useSWR("/api/spotify", fetcher);
+  console.log("🚀 ~ file: Hero.js ~ line 13 ~ Hero ~ data", data);
+
   return (
     //   w-full h-screen
     <div className="flex flex-row justify-center items-start overflow-hidden">
