@@ -1,6 +1,7 @@
 import React from "react";
 import userData from "@constants/data";
 import projects from "pages/projects";
+import Image from "next/image";
 
 export default function Projects() {
   return (
@@ -38,10 +39,13 @@ const ProjectCard = ({ title, link, imgUrl, number }) => {
     >
       <div className="relative overflow-hidden">
         <div className="h-72 object-cover">
-          <img
+          <Image
             src={imgUrl}
-            alt="portfolio"
-            className="transform hover:scale-105 transition duration-2000 ease-out object-cover h-full w-full"
+            quality={100}
+            placeholder="blur"
+            blurDataURL
+            width={560}
+            height={290}
           />
         </div>
         <h1 className="absolute top-10 left-10 text-gray-50 dark:text-[#FAF089] font-bold text-xl bg-gray-800 rounded-md px-2">

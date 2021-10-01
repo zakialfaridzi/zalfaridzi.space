@@ -20,12 +20,12 @@ export default function Spotify() {
               ? data.songUrl
               : "https://open.spotify.com/user/4n9el8q41ngdg9dzkkf1bv5tj"
           }
-          className="relative flex items-center p-5 space-x-4 transition-shadow border rounded-md hover:shadow-md w-72"
+          className="relative flex items-center p-5 space-x-4 transition-shadow border dark:border-[#FAF089] rounded-md hover:shadow-md w-72"
         >
-          <div className="w-16 ">
+          <div className="w-32 ">
             {data?.isPlaying ? (
               <img
-                className="w-16 shadow-sm"
+                className="w-32 shadow-sm"
                 src={data?.albumImageUrl}
                 alt={data?.album}
               />
@@ -35,10 +35,10 @@ export default function Spotify() {
           </div>
 
           <div className="flex-1">
-            <p className="font-medium component">
+            <p className="font-medium text-2xl component">
               {data?.isPlaying ? data.title : <h1>Not Listening</h1>}
             </p>
-            <p className="text-xs font-dark">
+            <p className="text-sm font-dark">
               {data?.isPlaying ? data.artist : "Spotify"}
             </p>
           </div>
@@ -46,7 +46,9 @@ export default function Spotify() {
             <SiSpotify size={20} color={"#1ED760"} />
           </div>
         </motion.a>
-      ) : null}
+      ) : (
+        <h1 className="text-xl">Listening to my cat's meowings🐱</h1>
+      )}
     </AnimatePresence>
   );
 }
