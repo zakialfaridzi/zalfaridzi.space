@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 import userData from "@constants/data";
+import Navbar from "./Navbar";
 
 export default function Footer() {
   const { theme, setTheme } = useTheme();
@@ -11,6 +12,7 @@ export default function Footer() {
   }, []);
   return (
     <div className="bg-[#F1F1F1] dark:bg-gray-900">
+      <Navbar />
       <div className="max-w-6xl  mx-auto px-4 py-10 md:py-20">
         <div className="h-0.5 w-full bg-white dark:bg-gray-700"></div>
         <div className="flex flex-col space-y-4 md:space-y-0 md:flex-row justify-between md:items-center mt-8">
@@ -19,8 +21,8 @@ export default function Footer() {
           </div>
           <div>
             Developed by
-            <div className="inline-block transform hover:scale-110 hover:-rotate-3 transition duration-300">
-              <a className="hover:bg-red-500 rounded-md px-2 py-1 hover:text-gray-50">
+            <div className="inline-block transform hover:scale-110 transition duration-300">
+              <a className="hover:bg-gray-700 dark:hover:bg-gray-700 dark:hover:text-[#FAF089] rounded-md px-2 py-1 hover:text-[#F4FDFF]">
                 zalfaridzi
               </a>
             </div>

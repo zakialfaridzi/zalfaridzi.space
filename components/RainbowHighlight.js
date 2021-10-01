@@ -9,11 +9,11 @@ export const RainbowHighlight = ({ color, children }) => {
     <RoughNotation
       type="underline"
       multiline={true}
-      padding={[0, 0, 10, 0]}
-      iterations={1}
+      padding={[0, 2]}
+      iterations={5}
       animationDuration={animationDuration}
       color={color}
-      strokeWidth={1}
+      strokeWidth={2}
     >
       {children}
     </RoughNotation>

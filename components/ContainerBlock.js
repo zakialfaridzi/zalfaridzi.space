@@ -1,8 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import { useRouter } from "next/router";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
+import { motion } from "framer-motion";
 
 export default function ContainerBlock({ children, ...customMeta }) {
   const router = useRouter();
@@ -14,10 +13,17 @@ export default function ContainerBlock({ children, ...customMeta }) {
     type: "website",
     ...customMeta,
   };
+
+  const variants = {
+    hidden: { opacity: 0, x: -200, y: 0 },
+    enter: { opacity: 1, x: 0, y: 0 },
+    exit: { opacity: 0, x: 0, y: -100 },
+  };
   return (
     <div>
       <Head>
         <title>{meta.title}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="robots" content="follow, index" />
         <meta content={meta.description} name="description" />
         <meta
@@ -62,11 +68,15 @@ export default function ContainerBlock({ children, ...customMeta }) {
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
         <meta name="theme-color" content="#ffffff" />
       </Head>
-      <main className="dark:bg-gray-800 w-full">
-        <Navbar />
-        <div>{children}</div>
-        <Footer />
-      </main>
+      <motion.main
+        initial="hidden"
+        animate="enter"
+        exit="exit"
+        variants={variants}
+        transition={{ type: "spring" }}
+      >
+        {children}
+      </motion.main>
     </div>
   );
 }
