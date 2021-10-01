@@ -1,44 +1,23 @@
 import userData from "@constants/data";
 import Image from "next/image";
-import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
-import { RainbowHighlight } from "./RainbowHighlight";
 import styles from "../styles/Hero.module.css";
-import useSWR from "swr";
 
 export default function Hero() {
   const colors = ["#F59E0B", "#84CC16", "#10B981", "#3B82F6"];
-
-  const fetcher = (url) => fetch(url).then((r) => r.json());
-  const { data } = useSWR("/api/spotify", fetcher);
-  console.log("🚀 ~ file: Hero.js ~ line 13 ~ Hero ~ data", data);
-
   return (
     //   w-full h-screen
-    <div className="flex flex-row justify-center items-start overflow-hidden">
+    <div className="lg:h-screen flex flex-row justify-center items-start overflow-hidden">
       {/* Text container */}
 
       <div className="w-full md:w-1/2 mx-auto text-center md:text-left lg:p-20">
-        <RoughNotationGroup show={true}>
-          <h1 className="text-4xl md:text-7xl font-bold text-black dark:text-[#FAF089] my-2">
-            Hey, call me Zaki!<span className={styles.wave}>👋</span>
-          </h1>
+        <h1 className="text-4xl md:text-7xl font-bold text-black dark:text-[#FAF089] my-2">
+          Hey, call me Zaki!<span className={styles.wave}>👋</span>
+        </h1>
 
-          <RainbowHighlight color={colors[1]}>
-            <h1 className="text-2xl font-bold text-black dark:text-[#FAF089] my-2">
-              Eager Frontend Web Dev
-            </h1>
-          </RainbowHighlight>
-          <RainbowHighlight color={colors[2]}>
-            <h1 className="text-2xl  font-bold text-gray-700 dark:text-gray-200 my-2">
-              Main Tech Stack React/NextJS + Tailwind
-            </h1>
-          </RainbowHighlight>
-          <RainbowHighlight color={colors[3]}>
-            <h1 className="text-2xl  font-bold text-gray-700 dark:text-gray-200 my-2">
-              IS Student
-            </h1>
-          </RainbowHighlight>
-        </RoughNotationGroup>
+        <h1 className="text-xl font-medium text-black dark:text-gray-200 my-2 pt-4">
+          An IS student who also an eager frontend web dev who does React,
+          NextJS, Tailwind/ChakraUI thingy regularly.
+        </h1>
       </div>
       {/* Image container */}
       <div className="hidden lg:block relative w-full md:w-1/2 -mr-40 mt-20">
