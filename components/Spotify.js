@@ -1,8 +1,8 @@
 import useSWR from "swr";
-import { SiSpotify } from "react-icons/si";
 import { AnimatePresence, motion } from "framer-motion";
 
 import fetcher from "../utils/fetcher";
+import { SiSpotify } from "@react-icons/all-files/si/SiSpotify";
 
 export default function Spotify() {
   const { data } = useSWR("/api/spotify", fetcher);
