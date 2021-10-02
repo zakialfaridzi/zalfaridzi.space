@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 import userData from "@constants/data";
-import Navbar from "./Navbar";
 
 export default function Footer() {
   const { theme, setTheme } = useTheme();
