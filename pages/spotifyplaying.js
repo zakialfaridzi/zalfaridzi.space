@@ -1,7 +1,7 @@
 import ContainerBlock from "../components/ContainerBlock";
 import Spotify from "@components/Spotify";
 
-export default function SpotifyPlaying() {
+export default function spotifyplaying() {
   return (
     <ContainerBlock title="Jam - zalfaridzi">
       <section className="bg-white dark:bg-gray-800">
