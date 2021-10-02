@@ -7,7 +7,7 @@ export default function Projects() {
   return (
     <section className="bg-white dark:bg-gray-800">
       <div className="max-w-6xl mx-auto h-[14rem] bg-white dark:bg-gray-800">
-        <h1 className="text-5xl md:text-9xl font-bold py-20 text-center md:text-left">
+        <h1 className="text-5xl md:text-9xl font-bold py-20 text-center md:text-left font-jkt">
           Projects
         </h1>
       </div>
@@ -33,12 +33,12 @@ const ProjectCard = ({ title, link, imgUrl, number }) => {
   return (
     <a
       href={link}
-      className="lg:w-full md:w-auto sm:w-auto block shadow-2xl max-w-xl mx-auto"
+      className="lg:w-full md:w-auto sm:w-auto block max-w-xl mx-auto"
       target="_blank"
       rel="noreferrer"
     >
-      <div className="relative overflow-hidden">
-        <div className="h-72 object-cover">
+      <div className="relative overflow-hidden ">
+        <div className="h-auto">
           <Image
             src={imgUrl}
             quality={100}
@@ -46,16 +46,16 @@ const ProjectCard = ({ title, link, imgUrl, number }) => {
             blurDataURL
             width={560}
             height={290}
+            objectFit="cover"
+            className="rounded-xl"
           />
         </div>
-        <h1 className="absolute top-10 left-10 text-gray-50 dark:text-[#FAF089] font-bold text-xl bg-gray-800 rounded-md px-2">
+        <h1 className="absolute top-10 left-10 text-gray-50 dark:text-[#FAF089] font-bold text-xl bg-gray-800 rounded-md px-2 font-jkt">
           {title}
         </h1>
-        <div className="bg-gray-600 dark:bg-gray-700">
-          <h1 className="text-gray-50 dark:text-[#FAF089] font-bold text-xl py-2 px-2 ml-3">
-            {number.length === 1 ? "0" + number : number}
-          </h1>
-        </div>
+        <h1 className="absolute top-10 right-10 text-gray-50 dark:text-[#FAF089] font-bold text-xl bg-gray-800 rounded-md px-2 font-jkt">
+          {number.length === 1 ? "0" + number : number}
+        </h1>
       </div>
     </a>
   );

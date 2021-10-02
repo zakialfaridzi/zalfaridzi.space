@@ -20,7 +20,7 @@ export default function Spotify() {
               ? data.songUrl
               : "https://open.spotify.com/user/4n9el8q41ngdg9dzkkf1bv5tj"
           }
-          className="relative flex items-center p-5 space-x-4 transition-shadow border dark:border-[#FAF089] rounded-md hover:shadow-md w-72"
+          className="relative flex items-center p-5 space-x-4 transition-shadow border border-gray-300 dark:border-[#FAF089] rounded-md hover:shadow-md w-auto"
         >
           <div className="w-32 ">
             {data?.isPlaying ? (
@@ -35,10 +35,10 @@ export default function Spotify() {
           </div>
 
           <div className="flex-1">
-            <p className="font-medium text-2xl component">
+            <p className="font-medium text-xl component font-jkt">
               {data?.isPlaying ? data.title : <h1>Not Listening</h1>}
             </p>
-            <p className="text-sm font-dark">
+            <p className="text-sm font-dark font-jkt">
               {data?.isPlaying ? data.artist : "Spotify"}
             </p>
           </div>
@@ -47,7 +47,10 @@ export default function Spotify() {
           </div>
         </motion.a>
       ) : (
-        <h1 className="text-xl">Listening to my cat's meowings🐱</h1>
+        <h1 className="text-xl">
+          Not playing anything right now <br /> Just listening to my cat's
+          meowings😺🐈
+        </h1>
       )}
     </AnimatePresence>
   );

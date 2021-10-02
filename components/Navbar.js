@@ -50,10 +50,10 @@ export default function Navbar() {
                 <div className="flex-shrink-0 flex items-center">
                   <Link href="/">
                     <a>
-                      <h1 className="font-semibold text-xl dark:text-gray-100">
+                      <h1 className="font-semibold text-xl dark:text-gray-100 font-jkt">
                         {userData.name}
                       </h1>
-                      <p className="text-base font-light text-gray-500 dark:text-gray-300">
+                      <p className="text-base font-light text-gray-500 dark:text-gray-300 font-jkt">
                         {userData.designation}
                       </p>
                     </a>
@@ -65,8 +65,8 @@ export default function Navbar() {
                       <a
                         className={`text-base  ${
                           router.asPath === "/about"
-                            ? "text-gray-800 font-bold dark:text-[#FAF089] px-3 py-2 rounded-md text-sm"
-                            : "text-gray-600 dark:text-gray-300 font-normal hover:text-black dark:hover:text-[#FAF089] px-3 py-2 rounded-md text-sm"
+                            ? "text-gray-800 font-bold dark:text-[#FAF089] px-3 py-2 rounded-md text-sm font-jkt"
+                            : "text-gray-600 dark:text-gray-300 font-normal hover:text-black dark:hover:text-[#FAF089] px-3 py-2 rounded-md text-sm font-jkt"
                         }`}
                       >
                         About{" "}
@@ -91,8 +91,8 @@ export default function Navbar() {
                       <a
                         className={`text-base  ${
                           router.asPath === "/projects"
-                            ? "text-gray-800 font-bold dark:text-[#FAF089] px-3 py-2 rounded-md text-sm"
-                            : "text-gray-600 dark:text-gray-300 font-normal hover:text-black dark:hover:text-[#FAF089] px-3 py-2 rounded-md text-sm"
+                            ? "text-gray-800 font-bold dark:text-[#FAF089] px-3 py-2 rounded-md text-sm font-jkt"
+                            : "text-gray-600 dark:text-gray-300 font-normal hover:text-black dark:hover:text-[#FAF089] px-3 py-2 rounded-md text-sm font-jkt"
                         }`}
                       >
                         Projects
@@ -117,8 +117,8 @@ export default function Navbar() {
                       <a
                         className={`text-base  ${
                           router.asPath === "/experience"
-                            ? "text-gray-800 font-bold dark:text-[#FAF089] px-3 py-2 rounded-md text-sm"
-                            : "text-gray-600 dark:text-gray-300 font-normal hover:text-black dark:hover:text-[#FAF089] px-3 py-2 rounded-md text-sm"
+                            ? "text-gray-800 font-bold dark:text-[#FAF089] px-3 py-2 rounded-md text-sm font-jkt"
+                            : "text-gray-600 dark:text-gray-300 font-normal hover:text-black dark:hover:text-[#FAF089] px-3 py-2 rounded-md text-sm font-jkt"
                         }`}
                       >
                         Experience{" "}
@@ -143,8 +143,8 @@ export default function Navbar() {
                       <a
                         className={`text-base  ${
                           router.asPath === "/spotifyplaying"
-                            ? "text-gray-800 font-bold dark:text-[#FAF089] px-3 py-2 rounded-md text-sm"
-                            : "text-gray-600 dark:text-gray-300 font-normal hover:text-black dark:hover:text-[#FAF089] px-3 py-2 rounded-md text-sm"
+                            ? "text-gray-800 font-bold dark:text-[#FAF089] px-3 py-2 rounded-md text-sm font-jkt"
+                            : "text-gray-600 dark:text-gray-300 font-normal hover:text-black dark:hover:text-[#FAF089] px-3 py-2 rounded-md text-sm font-jkt"
                         }`}
                       >
                         Jam{" "}
@@ -193,7 +193,7 @@ export default function Navbar() {
                     item.current
                       ? "bg-gray-900 text-white"
                       : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                    "block px-3 py-2 rounded-md text-base font-medium"
+                    "block px-3 py-2 rounded-md text-base font-medium font-jkt"
                   )}
                   aria-current={item.current ? "page" : undefined}
                 >

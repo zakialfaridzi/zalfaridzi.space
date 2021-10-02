@@ -5,19 +5,19 @@ export default function AboutMe() {
   return (
     <section className="bg-white dark:bg-gray-800">
       <div className="max-w-6xl mx-auto h-[16.5rem] bg-white dark:bg-gray-800">
-        <h1 className="text-black dark:text-gray-200 text-5xl md:text-9xl font-bold py-20 text-center md:text-left">
+        <h1 className="text-black dark:text-gray-200 text-5xl md:text-9xl font-bold py-20 text-center md:text-left font-jkt">
           About Me
         </h1>
       </div>
       <div className="bg-[#F1F1F1] -mt-10 dark:bg-gray-900">
         <div className="text-container max-w-6xl mx-auto pt-20">
           <p
-            className="leading-loose text-2xl md:text-4xl font-semibold  mx-4"
+            className="leading-loose text-2xl md:text-4xl font-semibold mx-4 font-jkt"
             style={{ lineHeight: "3rem" }}
           >
             {userData.about.title} Currently working on{" "}
             <a
-              className="bg-gray-300 dark:bg-gray-800 rounded-md px-2 py-1 text-black dark:text-[#FAF089]"
+              className="bg-gray-300 dark:bg-gray-800 rounded-md px-2 py-1 text-black dark:text-[#FAF089] "
               href={userData.about.currentProjectUrl}
             >
               {userData.about.currentProject} 🏘️
@@ -31,7 +31,7 @@ export default function AboutMe() {
           {/* Social Buttons */}
           <div className="inline-flex flex-col">
             <div>
-              <h1 className="text-xl font-semibold text-gray-700 dark:text-gray-200">
+              <h1 className="text-xl font-semibold text-gray-700 dark:text-gray-200 font-jkt">
                 Contact
               </h1>
               <p className="text-lg text-gray-500 mt-4 dark:text-gray-300">
@@ -46,7 +46,7 @@ export default function AboutMe() {
               </p>
             </div>
             <div className="mt-8">
-              <h1 className="text-xl font-semibold text-gray-700 dark:text-gray-200">
+              <h1 className="text-xl font-semibold text-gray-700 dark:text-gray-200 font-jkt">
                 Job Opportunities
               </h1>
               <p className="text-lg text-gray-500 mt-4 dark:text-gray-300">
@@ -63,7 +63,7 @@ export default function AboutMe() {
               </p>
             </div>
             {/* Social Links */}
-            <h1 className="text-xl font-semibold text-gray-700 mt-8 dark:text-gray-200">
+            <h1 className="text-xl font-semibold text-gray-700 mt-8 dark:text-gray-200 font-jkt">
               Social Links
             </h1>
             <div className="mt-4 ml-4">
@@ -130,13 +130,13 @@ export default function AboutMe() {
             {userData.about.description?.map((desc, idx) => (
               <p
                 key={idx}
-                className="text-xl text-gray-700 mb-4 dark:text-gray-300 "
+                className="text-xl text-gray-700 mb-4 dark:text-gray-300"
               >
                 {desc}
               </p>
             ))}
 
-            <h1 className="text-gray-700 dark:text-white text-3xl rounded-md px-2 py-1 inline-block font-bold">
+            <h1 className="text-gray-700 dark:text-white text-3xl rounded-md px-2 py-1 inline-block font-bold font-jkt">
               Tech Stacks
             </h1>
             <div className="flex flex-row flex-wrap mt-8">
