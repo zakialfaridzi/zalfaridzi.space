@@ -37,7 +37,7 @@ export default function Spotify() {
                     ? data.songUrl
                     : "https://open.spotify.com/user/4n9el8q41ngdg9dzkkf1bv5tj"
                 }
-                className="relative flex items-center p-4 space-x-4 transition-shadow  rounded-md hover:shadow-md  hover:ring-4 hover:ring-black ring-2 ring-black dark:hover:ring-4 dark:hover:ring-[#1ED760] dark:ring-2 dark:ring-[#1ED760] w-auto"
+                className="relative flex items-center p-4 space-x-4 transition-shadow  rounded-md hover:shadow-md  hover:ring-4 hover:ring-gray-400 ring-2 ring-gray-300 dark:hover:ring-4 dark:hover:ring-[#1ED760] dark:ring-2 dark:ring-green-600 w-auto"
               >
                 <div className="w-32 ">
                   {data?.isPlaying ? (
