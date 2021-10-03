@@ -35,10 +35,10 @@ export default function Spotify() {
           </div>
 
           <div className="flex-1">
-            <p className="font-medium text-xl component font-jkt">
+            <p className="font-medium text-xl component  ">
               {data?.isPlaying ? data.title : <h1>Not Listening</h1>}
             </p>
-            <p className="text-sm font-dark font-jkt">
+            <p className="text-sm font-dark  ">
               {data?.isPlaying ? data.artist : "Spotify"}
             </p>
           </div>
@@ -47,7 +47,7 @@ export default function Spotify() {
           </div>
         </motion.a>
       ) : (
-        <h1 className="text-xl">
+        <h1 className="text-xl px-4">
           Not playing anything right now <br /> Just listening to my cat's
           meowings😺🐈
         </h1>

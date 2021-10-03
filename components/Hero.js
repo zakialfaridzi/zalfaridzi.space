@@ -10,11 +10,11 @@ export default function Hero() {
       {/* Text container */}
 
       <div className="w-full md:w-1/2 mx-auto text-center md:text-left lg:p-20">
-        <h1 className="text-4xl md:text-7xl font-bold text-black dark:text-[#FAF089] my-2 font-jkt">
+        <h1 className="text-4xl md:text-7xl font-bold text-black dark:text-[#FAF089] my-2  ">
           Hey, call me Zaki!<span className={styles.wave}>👋</span>
         </h1>
 
-        <h1 className="text-xl font-medium text-black dark:text-gray-200 my-2 pt-4 font-jkt">
+        <h1 className="text-xl font-medium text-black dark:text-gray-200 my-2 pt-4  ">
           An IS student who also an eager frontend web dev who does React,
           NextJS, Tailwind/ChakraUI thingy regularly.
         </h1>

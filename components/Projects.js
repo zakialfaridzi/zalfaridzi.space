@@ -7,7 +7,7 @@ export default function Projects() {
   return (
     <section className="bg-white dark:bg-gray-800">
       <div className="max-w-6xl mx-auto h-[14rem] bg-white dark:bg-gray-800">
-        <h1 className="text-5xl md:text-9xl font-bold py-20 text-center md:text-left font-jkt">
+        <h1 className="text-5xl md:text-9xl font-bold py-20 text-center md:text-left  ">
           Projects
         </h1>
       </div>
@@ -50,10 +50,10 @@ const ProjectCard = ({ title, link, imgUrl, number }) => {
             className="rounded-xl"
           />
         </div>
-        <h1 className="absolute top-10 left-10 text-gray-50 dark:text-[#FAF089] font-bold text-xl bg-gray-800 rounded-md px-2 font-jkt">
+        <h1 className="absolute top-10 left-10 text-gray-50 dark:text-[#FAF089] font-bold text-xl bg-gray-800 rounded-md px-2  ">
           {title}
         </h1>
-        <h1 className="absolute top-10 right-10 text-gray-50 dark:text-[#FAF089] font-bold text-xl bg-gray-800 rounded-md px-2 font-jkt">
+        <h1 className="absolute top-10 right-10 text-gray-50 dark:text-[#FAF089] font-bold text-xl bg-gray-800 rounded-md px-2  ">
           {number.length === 1 ? "0" + number : number}
         </h1>
       </div>
