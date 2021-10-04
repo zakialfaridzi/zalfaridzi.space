@@ -15,7 +15,7 @@ export default function Hero() {
         </h1>
 
         <h1 className="text-xl font-medium text-black dark:text-gray-200 my-2 pt-4  ">
-          An IS student who also an eager frontend web dev who does React,
+          An IS student who is also an eager frontend web dev who does React,
           NextJS, Tailwind/ChakraUI thingy regularly.
         </h1>
       </div>
