@@ -19,7 +19,7 @@ export default function Spotify() {
           <main className="flex flex-col items-center justify-center pt-14 space-y-3">
             <div>
               <h1 className="text-center text-3xl font-medium pb-4 px-2">
-                What's zalfaridzi listening to right now?
+                What's zalfaridzi listening to?
               </h1>
               <p className="text-center pb-4 px-4">
                 FYI, it'll change when i listen to something on Spotify 👀
@@ -66,7 +66,7 @@ export default function Spotify() {
             ) : (
               <h1 className="text-xl px-4">
                 Not playing anything right now <br /> Just listening to my cat's
-                meows😺🐈
+                annoyingly beautiful meows😺🐈
               </h1>
             )}
           </main>
